@@ -515,7 +515,8 @@ def main() -> None:
     st.markdown(
         """
         <style>
-        div[data-testid="stFormSubmitButton"] > button {
+        div[data-testid="stFormSubmitButton"] > button,
+        div[data-testid="stButton"] > button {
             min-height: 3rem;
             font-size: 1.05rem;
             font-weight: 700;
@@ -524,7 +525,8 @@ def main() -> None:
             border: 1px solid #15803d;
             border-radius: 0.6rem;
         }
-        div[data-testid="stFormSubmitButton"] > button:hover {
+        div[data-testid="stFormSubmitButton"] > button:hover,
+        div[data-testid="stButton"] > button:hover {
             background: #15803d;
             color: #ffffff;
         }
@@ -540,72 +542,71 @@ def main() -> None:
     cars = load_cars()
     car_types = sorted({car.get("type", "Unknown") for car in cars})
 
-    with st.form("search-form"):
-        st.markdown("#### Required Filters")
-        req_col1, req_col2 = st.columns([3, 3])
-        with req_col1:
-            st.markdown("### Zipcode (required)")
-            postal = st.text_input(
-                "Zipcode (required)",
-                value="10274",
-                max_chars=10,
-                label_visibility="collapsed",
-            )
+    st.markdown("#### Required Filters")
+    req_col1, req_col2 = st.columns([3, 3])
+    with req_col1:
+        st.markdown("### Zipcode (required)")
+        postal = st.text_input(
+            "Zipcode (required)",
+            value="10274",
+            max_chars=10,
+            label_visibility="collapsed",
+        )
 
-        with req_col2:
-            st.markdown("### Budget (USD)")
-            budget = st.number_input(
-                "Budget (USD)",
-                min_value=500,
-                value=10000,
-                step=500,
+    with req_col2:
+        st.markdown("### Budget (USD)")
+        budget = st.number_input(
+            "Budget (USD)",
+            min_value=500,
+            value=10000,
+            step=500,
+            max_value=200000,
+            label_visibility="collapsed",
+        )
+
+    with st.expander("Advanced Filters"):
+        adv_col1, adv_col2, adv_col3 = st.columns([2, 2, 2])
+        with adv_col1:
+            min_price = st.number_input(
+                "Min Price (USD)",
+                min_value=0,
+                value=1000,
+                step=100,
                 max_value=200000,
-                label_visibility="collapsed",
+            )
+        with adv_col2:
+            distance_miles = st.number_input(
+                "Search Distance (miles)",
+                min_value=1,
+                value=25,
+                step=5,
+                max_value=500,
+            )
+        with adv_col3:
+            selected_type = st.selectbox(
+                "Car Type",
+                ["All"] + car_types,
+                index=0,
             )
 
-        with st.expander("Advanced Filters"):
-            adv_col1, adv_col2, adv_col3 = st.columns([2, 2, 2])
-            with adv_col1:
-                min_price = st.number_input(
-                    "Min Price (USD)",
-                    min_value=0,
-                    value=1000,
-                    step=100,
-                    max_value=200000,
-                )
-            with adv_col2:
-                distance_miles = st.number_input(
-                    "Search Distance (miles)",
-                    min_value=1,
-                    value=25,
-                    step=5,
-                    max_value=500,
-                )
-            with adv_col3:
-                selected_type = st.selectbox(
-                    "Car Type",
-                    ["All"] + car_types,
-                    index=0,
-                )
+        adv_col4, adv_col5, adv_col6, adv_col7 = st.columns([2, 2, 2, 2])
+        with adv_col4:
+            clean_title_only = st.checkbox("Clean title", value=True)
+        with adv_col5:
+            aggressive_mode = st.checkbox(
+                "Aggressive",
+                value=False,
+                help=(
+                    "When off, each car is capped at its JSON maxPrice +10%. "
+                    "When on, only your Budget is used."
+                ),
+            )
+        with adv_col6:
+            show_complaints = st.checkbox("Browse complaints", value=False)
+        with adv_col7:
+            show_autotempest = st.checkbox("Browse autotempest", value=False)
 
-            adv_col4, adv_col5, adv_col6, adv_col7 = st.columns([2, 2, 2, 2])
-            with adv_col4:
-                clean_title_only = st.checkbox("Clean title", value=True)
-            with adv_col5:
-                aggressive_mode = st.checkbox(
-                    "Aggressive",
-                    value=False,
-                    help=(
-                        "When off, each car is capped at its JSON maxPrice +10%. "
-                        "When on, only your Budget is used."
-                    ),
-                )
-            with adv_col6:
-                show_complaints = st.checkbox("Browse complaints", value=False)
-            with adv_col7:
-                show_autotempest = st.checkbox("Browse autotempest", value=False)
-
-        submitted = st.form_submit_button("Search Listings", use_container_width=True)
+    submitted = st.button("Search Listings", use_container_width=True)
 
     if submitted:
         trimmed_postal = postal.strip()
