@@ -1,0 +1,2666 @@
+{
+  "note": "Normalized issue labels. CarComplaints year counts are now stored in complaintCountsByYear, with worstYears derived from those counts. commonProblems is year-free and derived from CarComplaints headlines, while verification.sourceTopHeadlines remains year-filtered.",
+  "cars": [
+    {
+      "rank": 1,
+      "car": "Toyota Camry",
+      "years": "2012-2017",
+      "engine": "2AR-FE / 2GR-FE",
+      "transmission": "6AT",
+      "type": "Sedan",
+      "maxMiles": "140k",
+      "maxPrice": "$12k",
+      "commonProblems": [
+        "transmission failure",
+        "foul smell when you turn on ac",
+        "stuttering",
+        "torque convertor failure",
+        "musty smell from a/c",
+        "compressor stopped working",
+        "uncomfortable seats",
+        "not shifting properly",
+        "touchscreen not responding to touch",
+        "unintended acceleration while braking"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/Camry/",
+        "sourceTopHeadlines": [
+          "Transmission Failure in the 2012 Toyota Camry",
+          "Foul Smell When You Turn On AC in the 2012 Toyota Camry",
+          "Stuttering in the 2012 Toyota Camry",
+          "Torque Convertor Failure in the 2014 Toyota Camry",
+          "Musty Smell From A/C in the 2014 Toyota Camry",
+          "Compressor Stopped Working in the 2014 Toyota Camry",
+          "Uncomfortable Seats in the 2015 Toyota Camry",
+          "Not Shifting Properly in the 2015 Toyota Camry",
+          "Touchscreen Not Responding To Touch in the 2015 Toyota Camry",
+          "Unintended Acceleration While Braking in the 2013 Toyota Camry"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/Camry/2012/",
+          "https://www.carcomplaints.com/Toyota/Camry/2012/",
+          "https://www.carcomplaints.com/Toyota/Camry/2012/",
+          "https://www.carcomplaints.com/Toyota/Camry/2014/",
+          "https://www.carcomplaints.com/Toyota/Camry/2014/",
+          "https://www.carcomplaints.com/Toyota/Camry/2014/",
+          "https://www.carcomplaints.com/Toyota/Camry/2015/",
+          "https://www.carcomplaints.com/Toyota/Camry/2015/",
+          "https://www.carcomplaints.com/Toyota/Camry/2015/",
+          "https://www.carcomplaints.com/Toyota/Camry/2013/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/Camry/",
+      "complaintCountsByYear": [
+        {
+          "year": 2012,
+          "complaints": 154
+        },
+        {
+          "year": 2013,
+          "complaints": 58
+        },
+        {
+          "year": 2014,
+          "complaints": 101
+        },
+        {
+          "year": 2015,
+          "complaints": 82
+        },
+        {
+          "year": 2016,
+          "complaints": 47
+        },
+        {
+          "year": 2017,
+          "complaints": 28
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2012,
+          "complaints": 154
+        },
+        {
+          "year": 2014,
+          "complaints": 101
+        },
+        {
+          "year": 2015,
+          "complaints": 82
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "car": "Toyota Camry",
+      "years": "2002-2006",
+      "engine": "2AZ-FE / 1MZ-FE",
+      "transmission": "4AT / 5MT",
+      "type": "Sedan",
+      "maxMiles": "160k",
+      "maxPrice": "$5k",
+      "commonProblems": [
+        "transmission failure",
+        "stripped head bolts",
+        "car overheating",
+        "engine died",
+        "knocking noise when turning steering wheel",
+        "brakes did not stop the vehicle",
+        "major internal engine damage",
+        "check engine light on",
+        "excessive oil consumption",
+        "burning oil"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/Camry/",
+        "sourceTopHeadlines": [
+          "Transmission Failure in the 2002 Toyota Camry",
+          "Stripped Head Bolts in the 2002 Toyota Camry",
+          "Car Overheating in the 2002 Toyota Camry",
+          "Engine Died in the 2003 Toyota Camry",
+          "Stripped Head Bolts in the 2003 Toyota Camry",
+          "Knocking Noise When Turning Steering Wheel in the 2003 Toyota Camry",
+          "The Brakes Did Not Stop The Vehicle in the 2005 Toyota Camry",
+          "Major Internal Engine Damage in the 2005 Toyota Camry",
+          "Transmission Failure in the 2005 Toyota Camry",
+          "Check Engine Light On in the 2004 Toyota Camry"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/Camry/2002/",
+          "https://www.carcomplaints.com/Toyota/Camry/2002/",
+          "https://www.carcomplaints.com/Toyota/Camry/2002/",
+          "https://www.carcomplaints.com/Toyota/Camry/2003/",
+          "https://www.carcomplaints.com/Toyota/Camry/2003/",
+          "https://www.carcomplaints.com/Toyota/Camry/2003/",
+          "https://www.carcomplaints.com/Toyota/Camry/2005/",
+          "https://www.carcomplaints.com/Toyota/Camry/2005/",
+          "https://www.carcomplaints.com/Toyota/Camry/2005/",
+          "https://www.carcomplaints.com/Toyota/Camry/2004/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/Camry/",
+      "complaintCountsByYear": [
+        {
+          "year": 2002,
+          "complaints": 193
+        },
+        {
+          "year": 2003,
+          "complaints": 151
+        },
+        {
+          "year": 2004,
+          "complaints": 60
+        },
+        {
+          "year": 2005,
+          "complaints": 126
+        },
+        {
+          "year": 2006,
+          "complaints": 47
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2002,
+          "complaints": 193
+        },
+        {
+          "year": 2003,
+          "complaints": 151
+        },
+        {
+          "year": 2005,
+          "complaints": 126
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "car": "Honda Accord",
+      "years": "2008-2012",
+      "engine": "K24 / J35",
+      "transmission": "5AT / 5MT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "140k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "premature brake wear",
+        "excessive oil consumption",
+        "grinding noise at start up",
+        "brakes squeak like crazy",
+        "engine stalls/shuts down while driving",
+        "uncomfortable seats",
+        "transmission failure",
+        "transmission slipping and jerking",
+        "starter failure",
+        "power steering fails while driving"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/Accord/",
+        "sourceTopHeadlines": [
+          "Premature Brake Wear in the 2008 Honda Accord",
+          "Excessive Oil Consumption in the 2008 Honda Accord",
+          "Grinding Noise At Start Up in the 2008 Honda Accord",
+          "Premature Brake Wear in the 2009 Honda Accord",
+          "Brakes Squeak Like Crazy in the 2009 Honda Accord",
+          "Excessive Oil Consumption in the 2009 Honda Accord",
+          "Premature Brake Wear in the 2010 Honda Accord",
+          "Excessive Oil Consumption in the 2010 Honda Accord",
+          "Engine Stalls/Shuts Down While Driving in the 2010 Honda Accord",
+          "Uncomfortable Seats in the 2012 Honda Accord"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/Accord/2008/",
+          "https://www.carcomplaints.com/Honda/Accord/2008/",
+          "https://www.carcomplaints.com/Honda/Accord/2008/",
+          "https://www.carcomplaints.com/Honda/Accord/2009/",
+          "https://www.carcomplaints.com/Honda/Accord/2009/",
+          "https://www.carcomplaints.com/Honda/Accord/2009/",
+          "https://www.carcomplaints.com/Honda/Accord/2010/",
+          "https://www.carcomplaints.com/Honda/Accord/2010/",
+          "https://www.carcomplaints.com/Honda/Accord/2010/",
+          "https://www.carcomplaints.com/Honda/Accord/2012/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/Accord/",
+      "complaintCountsByYear": [
+        {
+          "year": 2008,
+          "complaints": 2496
+        },
+        {
+          "year": 2009,
+          "complaints": 988
+        },
+        {
+          "year": 2010,
+          "complaints": 507
+        },
+        {
+          "year": 2011,
+          "complaints": 205
+        },
+        {
+          "year": 2012,
+          "complaints": 242
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2008,
+          "complaints": 2496
+        },
+        {
+          "year": 2009,
+          "complaints": 988
+        },
+        {
+          "year": 2010,
+          "complaints": 507
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "car": "Honda Accord (V6)",
+      "years": "2013-2017",
+      "engine": "J35Y",
+      "transmission": "6AT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "130k",
+      "maxPrice": "$14k",
+      "commonProblems": [
+        "starter failure",
+        "power steering fails while driving",
+        "engine won't turn over, won't start",
+        "starter not working properly",
+        "uncomfortable seats",
+        "daytime led lights burning out",
+        "a/c/heater not working properly",
+        "clear coat problem",
+        "transmission failure",
+        "transmission slipping and jerking"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/Accord/",
+        "sourceTopHeadlines": [
+          "Starter Failure in the 2013 Honda Accord",
+          "Power Steering Fails While Driving in the 2013 Honda Accord",
+          "Engine Won't Turn Over, Won't Start in the 2013 Honda Accord",
+          "Starter Not Working Properly in the 2014 Honda Accord",
+          "Engine Won't Turn Over, Won't Start in the 2014 Honda Accord",
+          "Uncomfortable Seats in the 2014 Honda Accord",
+          "Daytime Led Lights Burning Out in the 2016 Honda Accord",
+          "Uncomfortable Seats in the 2016 Honda Accord",
+          "A/C/Heater Not Working Properly in the 2016 Honda Accord",
+          "Clear Coat Problem in the 2015 Honda Accord"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/Accord/2013/",
+          "https://www.carcomplaints.com/Honda/Accord/2013/",
+          "https://www.carcomplaints.com/Honda/Accord/2013/",
+          "https://www.carcomplaints.com/Honda/Accord/2014/",
+          "https://www.carcomplaints.com/Honda/Accord/2014/",
+          "https://www.carcomplaints.com/Honda/Accord/2014/",
+          "https://www.carcomplaints.com/Honda/Accord/2016/",
+          "https://www.carcomplaints.com/Honda/Accord/2016/",
+          "https://www.carcomplaints.com/Honda/Accord/2016/",
+          "https://www.carcomplaints.com/Honda/Accord/2015/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/Accord/",
+      "complaintCountsByYear": [
+        {
+          "year": 2013,
+          "complaints": 600
+        },
+        {
+          "year": 2014,
+          "complaints": 381
+        },
+        {
+          "year": 2015,
+          "complaints": 194
+        },
+        {
+          "year": 2016,
+          "complaints": 282
+        },
+        {
+          "year": 2017,
+          "complaints": 124
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2013,
+          "complaints": 600
+        },
+        {
+          "year": 2014,
+          "complaints": 381
+        },
+        {
+          "year": 2016,
+          "complaints": 282
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "car": "Lexus ES 350",
+      "years": "2007-2018",
+      "engine": "2GR-FE",
+      "transmission": "6AT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$13k",
+      "commonProblems": [
+        "oil leak from timing chain cover",
+        "melting dashboard",
+        "blown engine head",
+        "battery not discharging",
+        "engine noise",
+        "water leaking into cabin",
+        "sunroof exploded",
+        "unwanted reflection in outside mirror",
+        "blown head gasket",
+        "car accelerated, lurched forward on its own"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Lexus/ES_350/",
+        "sourceTopHeadlines": [
+          "Oil Leak From Timing Chain Cover in the 2007 Lexus ES 350",
+          "Melting Dashboard in the 2007 Lexus ES 350",
+          "Blown Engine Head in the 2007 Lexus ES 350",
+          "Melting Dashboard in the 2008 Lexus ES 350",
+          "Battery Not Discharging in the 2008 Lexus ES 350",
+          "Engine Noise in the 2008 Lexus ES 350",
+          "Water Leaking Into Cabin in the 2013 Lexus ES 350",
+          "Sunroof Exploded in the 2013 Lexus ES 350",
+          "Unwanted Reflection In Outside Mirror in the 2013 Lexus ES 350",
+          "Blown Head Gasket in the 2014 Lexus ES 350"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Lexus/ES_350/2007/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2007/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2007/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2008/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2008/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2008/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2013/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2013/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2013/",
+          "https://www.carcomplaints.com/Lexus/ES_350/2014/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Lexus/ES_350/",
+      "complaintCountsByYear": [
+        {
+          "year": 2007,
+          "complaints": 55
+        },
+        {
+          "year": 2008,
+          "complaints": 24
+        },
+        {
+          "year": 2009,
+          "complaints": 7
+        },
+        {
+          "year": 2010,
+          "complaints": 1
+        },
+        {
+          "year": 2011,
+          "complaints": 4
+        },
+        {
+          "year": 2012,
+          "complaints": 0
+        },
+        {
+          "year": 2013,
+          "complaints": 15
+        },
+        {
+          "year": 2014,
+          "complaints": 7
+        },
+        {
+          "year": 2015,
+          "complaints": 3
+        },
+        {
+          "year": 2016,
+          "complaints": 2
+        },
+        {
+          "year": 2017,
+          "complaints": 0
+        },
+        {
+          "year": 2018,
+          "complaints": 1
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 55
+        },
+        {
+          "year": 2008,
+          "complaints": 24
+        },
+        {
+          "year": 2013,
+          "complaints": 15
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "car": "Acura TL",
+      "years": "2004-2008",
+      "engine": "J32 / J35",
+      "transmission": "5AT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$7k",
+      "commonProblems": [
+        "cracked dashboard",
+        "transmission failure",
+        "bluetooth failure",
+        "battery drains",
+        "premature tire wear",
+        "seats ripping",
+        "excessive oil consumption",
+        "paint cracking",
+        "shifting roughly",
+        "car shakes during acceleration"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Acura/TL/",
+        "sourceTopHeadlines": [
+          "Cracked Dashboard in the 2006 Acura TL",
+          "Transmission Failure in the 2006 Acura TL",
+          "Bluetooth Failure in the 2006 Acura TL",
+          "Cracked Dashboard in the 2005 Acura TL",
+          "Transmission Failure in the 2005 Acura TL",
+          "Battery Drains in the 2005 Acura TL",
+          "Transmission Failure in the 2004 Acura TL",
+          "Cracked Dashboard in the 2004 Acura TL",
+          "Premature Tire Wear in the 2004 Acura TL",
+          "Seats Ripping in the 2008 Acura TL"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Acura/TL/2006/",
+          "https://www.carcomplaints.com/Acura/TL/2006/",
+          "https://www.carcomplaints.com/Acura/TL/2006/",
+          "https://www.carcomplaints.com/Acura/TL/2005/",
+          "https://www.carcomplaints.com/Acura/TL/2005/",
+          "https://www.carcomplaints.com/Acura/TL/2005/",
+          "https://www.carcomplaints.com/Acura/TL/2004/",
+          "https://www.carcomplaints.com/Acura/TL/2004/",
+          "https://www.carcomplaints.com/Acura/TL/2004/",
+          "https://www.carcomplaints.com/Acura/TL/2008/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Acura/TL/",
+      "complaintCountsByYear": [
+        {
+          "year": 2004,
+          "complaints": 41
+        },
+        {
+          "year": 2005,
+          "complaints": 54
+        },
+        {
+          "year": 2006,
+          "complaints": 63
+        },
+        {
+          "year": 2007,
+          "complaints": 28
+        },
+        {
+          "year": 2008,
+          "complaints": 32
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2006,
+          "complaints": 63
+        },
+        {
+          "year": 2005,
+          "complaints": 54
+        },
+        {
+          "year": 2004,
+          "complaints": 41
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "car": "Acura TL",
+      "years": "2009-2014",
+      "engine": "J35",
+      "transmission": "5AT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "140k",
+      "maxPrice": "$11k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "brake rotors defective",
+        "air bag light comes on",
+        "power steering failed",
+        "stalling, hesitating, and jerking",
+        "lack of throttle response",
+        "paint cracking",
+        "shifting roughly",
+        "obstructed transmission filter",
+        "transmission failure"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Acura/TL/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2010 Acura TL",
+          "Brake Rotors Defective in the 2010 Acura TL",
+          "Air Bag Light Comes On in the 2010 Acura TL",
+          "Power Steering Failed in the 2012 Acura TL",
+          "Stalling, Hesitating, And Jerking in the 2012 Acura TL",
+          "Lack Of Throttle Response in the 2012 Acura TL",
+          "Paint Cracking in the 2009 Acura TL",
+          "Excessive Oil Consumption in the 2009 Acura TL",
+          "Shifting Roughly in the 2009 Acura TL",
+          "Obstructed Transmission Filter in the 2014 Acura TL"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Acura/TL/2010/",
+          "https://www.carcomplaints.com/Acura/TL/2010/",
+          "https://www.carcomplaints.com/Acura/TL/2010/",
+          "https://www.carcomplaints.com/Acura/TL/2012/",
+          "https://www.carcomplaints.com/Acura/TL/2012/",
+          "https://www.carcomplaints.com/Acura/TL/2012/",
+          "https://www.carcomplaints.com/Acura/TL/2009/",
+          "https://www.carcomplaints.com/Acura/TL/2009/",
+          "https://www.carcomplaints.com/Acura/TL/2009/",
+          "https://www.carcomplaints.com/Acura/TL/2014/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Acura/TL/",
+      "complaintCountsByYear": [
+        {
+          "year": 2009,
+          "complaints": 18
+        },
+        {
+          "year": 2010,
+          "complaints": 28
+        },
+        {
+          "year": 2011,
+          "complaints": 2
+        },
+        {
+          "year": 2012,
+          "complaints": 26
+        },
+        {
+          "year": 2013,
+          "complaints": 5
+        },
+        {
+          "year": 2014,
+          "complaints": 5
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2010,
+          "complaints": 28
+        },
+        {
+          "year": 2012,
+          "complaints": 26
+        },
+        {
+          "year": 2009,
+          "complaints": 18
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "car": "Infiniti G35",
+      "years": "2003-2007",
+      "engine": "VQ35DE",
+      "transmission": "5AT / 6MT",
+      "type": "Sedan/Coupe",
+      "maxMiles": "140k",
+      "maxPrice": "$8k",
+      "commonProblems": [
+        "brakes and rotors wear prematurely",
+        "steering rack leaking",
+        "rear window shattered",
+        "excessive oil consumption",
+        "faulty bcm module leads to total lockdown with nats system",
+        "transmission failure",
+        "transmission failed",
+        "timing chain failure",
+        "seal on wheel and door armrests melt, rub off",
+        "bad smell in the car"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Infiniti/G35/",
+        "sourceTopHeadlines": [
+          "Brakes And Rotors Wear Prematurely in the 2003 Infiniti G35",
+          "Steering Rack Leaking in the 2003 Infiniti G35",
+          "Rear Window Shattered in the 2003 Infiniti G35",
+          "Excessive Oil Consumption in the 2006 Infiniti G35",
+          "Faulty Bcm Module Leads To Total Lockdown With Nats System in the 2006 Infiniti G35",
+          "Transmission Failure in the 2006 Infiniti G35",
+          "Transmission Failed in the 2007 Infiniti G35",
+          "Timing Chain Failure in the 2007 Infiniti G35",
+          "Seal On Wheel And Door Armrests Melt, Rub Off in the 2007 Infiniti G35",
+          "Bad Smell In The Car in the 2004 Infiniti G35"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Infiniti/G35/2003/",
+          "https://www.carcomplaints.com/Infiniti/G35/2003/",
+          "https://www.carcomplaints.com/Infiniti/G35/2003/",
+          "https://www.carcomplaints.com/Infiniti/G35/2006/",
+          "https://www.carcomplaints.com/Infiniti/G35/2006/",
+          "https://www.carcomplaints.com/Infiniti/G35/2006/",
+          "https://www.carcomplaints.com/Infiniti/G35/2007/",
+          "https://www.carcomplaints.com/Infiniti/G35/2007/",
+          "https://www.carcomplaints.com/Infiniti/G35/2007/",
+          "https://www.carcomplaints.com/Infiniti/G35/2004/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Infiniti/G35/",
+      "complaintCountsByYear": [
+        {
+          "year": 2003,
+          "complaints": 21
+        },
+        {
+          "year": 2004,
+          "complaints": 7
+        },
+        {
+          "year": 2005,
+          "complaints": 3
+        },
+        {
+          "year": 2006,
+          "complaints": 10
+        },
+        {
+          "year": 2007,
+          "complaints": 8
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2003,
+          "complaints": 21
+        },
+        {
+          "year": 2006,
+          "complaints": 10
+        },
+        {
+          "year": 2007,
+          "complaints": 8
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "car": "Infiniti G37",
+      "years": "2008-2013",
+      "engine": "VQ37VHR",
+      "transmission": "7AT / 6MT",
+      "type": "Sedan/Coupe",
+      "maxMiles": "130k",
+      "maxPrice": "$12k",
+      "commonProblems": [
+        "steering lock failure",
+        "complete loss of electrical power",
+        "cracked dashboard",
+        "air bag sensor malfunction",
+        "unintended acceleration",
+        "seat not working properly",
+        "dash panel cracked and sticky",
+        "engine runs rough",
+        "a/c blowing warm air"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Infiniti/G37/",
+        "sourceTopHeadlines": [
+          "Steering Lock Failure in the 2009 Infiniti G37",
+          "Complete Loss Of Electrical Power in the 2009 Infiniti G37",
+          "Cracked Dashboard in the 2009 Infiniti G37",
+          "Air Bag Sensor Malfunction in the 2011 Infiniti G37",
+          "Cracked Dashboard in the 2011 Infiniti G37",
+          "Unintended Acceleration in the 2011 Infiniti G37",
+          "Seat Not Working Properly in the 2010 Infiniti G37",
+          "Dash Panel Cracked And Sticky in the 2010 Infiniti G37",
+          "Engine Runs Rough in the 2010 Infiniti G37",
+          "A/C Blowing Warm Air in the 2013 Infiniti G37"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Infiniti/G37/2009/",
+          "https://www.carcomplaints.com/Infiniti/G37/2009/",
+          "https://www.carcomplaints.com/Infiniti/G37/2009/",
+          "https://www.carcomplaints.com/Infiniti/G37/2011/",
+          "https://www.carcomplaints.com/Infiniti/G37/2011/",
+          "https://www.carcomplaints.com/Infiniti/G37/2011/",
+          "https://www.carcomplaints.com/Infiniti/G37/2010/",
+          "https://www.carcomplaints.com/Infiniti/G37/2010/",
+          "https://www.carcomplaints.com/Infiniti/G37/2010/",
+          "https://www.carcomplaints.com/Infiniti/G37/2013/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Infiniti/G37/",
+      "complaintCountsByYear": [
+        {
+          "year": 2008,
+          "complaints": 8
+        },
+        {
+          "year": 2009,
+          "complaints": 28
+        },
+        {
+          "year": 2010,
+          "complaints": 9
+        },
+        {
+          "year": 2011,
+          "complaints": 14
+        },
+        {
+          "year": 2012,
+          "complaints": 6
+        },
+        {
+          "year": 2013,
+          "complaints": 8
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2009,
+          "complaints": 28
+        },
+        {
+          "year": 2011,
+          "complaints": 14
+        },
+        {
+          "year": 2010,
+          "complaints": 9
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "car": "Nissan Maxima",
+      "years": "2004-2006",
+      "engine": "VQ35DE",
+      "transmission": "5AT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$6k",
+      "commonProblems": [
+        "jerks when shifting",
+        "transmission failure",
+        "transmission slips",
+        "transmission not working correctly",
+        "vehicle jumps when changing gears",
+        "transmission slips and jerks",
+        "delay and a hard shift going into drive",
+        "transmisson slipping",
+        "won't accelerate",
+        "timing chain went"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Nissan/Maxima/",
+        "sourceTopHeadlines": [
+          "Jerks When Shifting in the 2004 Nissan Maxima",
+          "Transmission Failure in the 2004 Nissan Maxima",
+          "Transmission Slips in the 2004 Nissan Maxima",
+          "Transmission Not Working Correctly in the 2005 Nissan Maxima",
+          "Vehicle  Jumps When Changing Gears in the 2005 Nissan Maxima",
+          "Transmission Failure in the 2005 Nissan Maxima",
+          "Transmission Slips And Jerks in the 2006 Nissan Maxima",
+          "Delay And A Hard Shift Going Into Drive in the 2006 Nissan Maxima",
+          "Transmisson Slipping in the 2006 Nissan Maxima"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Nissan/Maxima/2004/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2004/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2004/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2005/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2005/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2005/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2006/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2006/",
+          "https://www.carcomplaints.com/Nissan/Maxima/2006/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Nissan/Maxima/",
+      "complaintCountsByYear": [
+        {
+          "year": 2004,
+          "complaints": 357
+        },
+        {
+          "year": 2005,
+          "complaints": 273
+        },
+        {
+          "year": 2006,
+          "complaints": 193
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2004,
+          "complaints": 357
+        },
+        {
+          "year": 2005,
+          "complaints": 273
+        },
+        {
+          "year": 2006,
+          "complaints": 193
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "car": "Toyota Corolla",
+      "years": "2009-2013",
+      "engine": "2ZR-FE",
+      "transmission": "4AT / 5MT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "water pump failure",
+        "loud noise from engine",
+        "paint chipping",
+        "grinding sound from brakes",
+        "steering",
+        "hard shifting/slipping",
+        "premature brake wear",
+        "compressor faulty",
+        "clear coat, paint issues"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/Corolla/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2009 Toyota Corolla",
+          "Water Pump Failure in the 2009 Toyota Corolla",
+          "Loud Noise From Engine in the 2009 Toyota Corolla",
+          "Paint Chipping in the 2010 Toyota Corolla",
+          "Grinding Sound From Brakes in the 2010 Toyota Corolla",
+          "Steering in the 2010 Toyota Corolla",
+          "Hard Shifting/Slipping in the 2013 Toyota Corolla",
+          "Premature Brake Wear in the 2013 Toyota Corolla",
+          "Compressor Faulty in the 2013 Toyota Corolla",
+          "Clear Coat, Paint Issues in the 2011 Toyota Corolla"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/Corolla/2009/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2009/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2009/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2010/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2010/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2010/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2013/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2013/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2013/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2011/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/Corolla/",
+      "complaintCountsByYear": [
+        {
+          "year": 2009,
+          "complaints": 254
+        },
+        {
+          "year": 2010,
+          "complaints": 127
+        },
+        {
+          "year": 2011,
+          "complaints": 36
+        },
+        {
+          "year": 2012,
+          "complaints": 32
+        },
+        {
+          "year": 2013,
+          "complaints": 44
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2009,
+          "complaints": 254
+        },
+        {
+          "year": 2010,
+          "complaints": 127
+        },
+        {
+          "year": 2013,
+          "complaints": 44
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "car": "Toyota Corolla",
+      "years": "2003-2008",
+      "engine": "1ZZ-FE",
+      "transmission": "4AT / 5MT",
+      "type": "Sedan",
+      "maxMiles": "160k",
+      "maxPrice": "$6k",
+      "commonProblems": [
+        "transmission and differential failure",
+        "oil sludge buildup, engine seized",
+        "failed emissions test",
+        "engine surges while stopped",
+        "paint chipping",
+        "cuts off while driving or upon stopping",
+        "paint is peeling",
+        "engine light on",
+        "won't start",
+        "paint peeling off"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/Corolla/",
+        "sourceTopHeadlines": [
+          "Transmission And Differential Failure in the 2003 Toyota Corolla",
+          "Oil Sludge Buildup, Engine Seized in the 2003 Toyota Corolla",
+          "Failed Emissions Test in the 2003 Toyota Corolla",
+          "Engine Surges While Stopped in the 2006 Toyota Corolla",
+          "Paint Chipping in the 2006 Toyota Corolla",
+          "Cuts Off While Driving Or Upon Stopping in the 2006 Toyota Corolla",
+          "Paint Is Peeling in the 2005 Toyota Corolla",
+          "Engine Light On in the 2005 Toyota Corolla",
+          "Won't Start in the 2005 Toyota Corolla",
+          "Paint Peeling Off in the 2007 Toyota Corolla"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/Corolla/2003/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2003/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2003/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2006/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2006/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2006/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2005/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2005/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2005/",
+          "https://www.carcomplaints.com/Toyota/Corolla/2007/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/Corolla/",
+      "complaintCountsByYear": [
+        {
+          "year": 2003,
+          "complaints": 112
+        },
+        {
+          "year": 2004,
+          "complaints": 48
+        },
+        {
+          "year": 2005,
+          "complaints": 87
+        },
+        {
+          "year": 2006,
+          "complaints": 87
+        },
+        {
+          "year": 2007,
+          "complaints": 56
+        },
+        {
+          "year": 2008,
+          "complaints": 37
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2003,
+          "complaints": 112
+        },
+        {
+          "year": 2006,
+          "complaints": 87
+        },
+        {
+          "year": 2005,
+          "complaints": 87
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "car": "Honda Civic",
+      "years": "2006-2011",
+      "engine": "R18 / K20",
+      "transmission": "5AT / 5MT / 6MT",
+      "type": "Sedan/Coupe",
+      "maxMiles": "140k",
+      "maxPrice": "$8k",
+      "commonProblems": [
+        "cracked engine block",
+        "clearcoat and paint problems",
+        "tires wear out prematurely",
+        "excessive/uneven tire wear",
+        "paint is peeling/cracking",
+        "paint & clear coat peeling",
+        "paint is flaking off",
+        "clear coat peeling",
+        "transmission failure",
+        "paint chipping"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/Civic/",
+        "sourceTopHeadlines": [
+          "Cracked Engine Block in the 2006 Honda Civic",
+          "Clearcoat And Paint Problems in the 2006 Honda Civic",
+          "Tires Wear Out Prematurely in the 2006 Honda Civic",
+          "Cracked Engine Block in the 2007 Honda Civic",
+          "Excessive/Uneven Tire Wear in the 2007 Honda Civic",
+          "Paint Is Peeling/Cracking in the 2007 Honda Civic",
+          "Cracked Engine Block in the 2008 Honda Civic",
+          "Paint & Clear Coat Peeling in the 2008 Honda Civic",
+          "Paint Is Flaking Off in the 2008 Honda Civic",
+          "Clear Coat Peeling in the 2009 Honda Civic"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/Civic/2006/",
+          "https://www.carcomplaints.com/Honda/Civic/2006/",
+          "https://www.carcomplaints.com/Honda/Civic/2006/",
+          "https://www.carcomplaints.com/Honda/Civic/2007/",
+          "https://www.carcomplaints.com/Honda/Civic/2007/",
+          "https://www.carcomplaints.com/Honda/Civic/2007/",
+          "https://www.carcomplaints.com/Honda/Civic/2008/",
+          "https://www.carcomplaints.com/Honda/Civic/2008/",
+          "https://www.carcomplaints.com/Honda/Civic/2008/",
+          "https://www.carcomplaints.com/Honda/Civic/2009/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/Civic/",
+      "complaintCountsByYear": [
+        {
+          "year": 2006,
+          "complaints": 819
+        },
+        {
+          "year": 2007,
+          "complaints": 766
+        },
+        {
+          "year": 2008,
+          "complaints": 653
+        },
+        {
+          "year": 2009,
+          "complaints": 420
+        },
+        {
+          "year": 2010,
+          "complaints": 298
+        },
+        {
+          "year": 2011,
+          "complaints": 97
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2006,
+          "complaints": 819
+        },
+        {
+          "year": 2007,
+          "complaints": 766
+        },
+        {
+          "year": 2008,
+          "complaints": 653
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "car": "Honda Civic",
+      "years": "2012-2013",
+      "engine": "R18",
+      "transmission": "5AT / 5MT",
+      "type": "Sedan",
+      "maxMiles": "130k",
+      "maxPrice": "$10k",
+      "commonProblems": [
+        "paint chipping",
+        "brake failure",
+        "engine stalls/cuts out while driving",
+        "uncomfortable seats",
+        "power steering warning light on",
+        "air bag system light on",
+        "transmission failure",
+        "clear coat peeling",
+        "rearview camera very dark compared to 2013",
+        "tire pressure warning light comes on"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/Civic/",
+        "sourceTopHeadlines": [
+          "Paint Chipping in the 2012 Honda Civic",
+          "Brake Failure in the 2012 Honda Civic",
+          "Engine Stalls/Cuts Out While Driving in the 2012 Honda Civic",
+          "Uncomfortable Seats in the 2013 Honda Civic",
+          "Power Steering Warning Light On in the 2013 Honda Civic",
+          "Air Bag System Light On in the 2013 Honda Civic"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/Civic/2012/",
+          "https://www.carcomplaints.com/Honda/Civic/2012/",
+          "https://www.carcomplaints.com/Honda/Civic/2012/",
+          "https://www.carcomplaints.com/Honda/Civic/2013/",
+          "https://www.carcomplaints.com/Honda/Civic/2013/",
+          "https://www.carcomplaints.com/Honda/Civic/2013/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/Civic/",
+      "complaintCountsByYear": [
+        {
+          "year": 2012,
+          "complaints": 212
+        },
+        {
+          "year": 2013,
+          "complaints": 128
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2012,
+          "complaints": 212
+        },
+        {
+          "year": 2013,
+          "complaints": 128
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "car": "Honda Fit",
+      "years": "2009-2013",
+      "engine": "L15",
+      "transmission": "5AT / 5MT",
+      "type": "Hatchback",
+      "maxMiles": "140k",
+      "maxPrice": "$8k",
+      "commonProblems": [
+        "spark plug blew out cylinder head",
+        "clear coat wearing off",
+        "extreme seat discomfort causing back pain",
+        "uncomfortable seats",
+        "windshield crack",
+        "clear coat defective",
+        "unintended swerving at highway speeds",
+        "incredibly uncomfortable head rest",
+        "cracked windshield",
+        "check engine light"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/Fit/",
+        "sourceTopHeadlines": [
+          "Spark Plug Blew Out Cylinder Head in the 2009 Honda Fit",
+          "Clear Coat Wearing Off in the 2009 Honda Fit",
+          "Extreme Seat Discomfort Causing Back Pain in the 2009 Honda Fit",
+          "Uncomfortable Seats in the 2010 Honda Fit",
+          "Windshield Crack in the 2010 Honda Fit",
+          "Clear Coat Defective in the 2010 Honda Fit",
+          "Unintended Swerving At Highway Speeds in the 2012 Honda Fit",
+          "Incredibly Uncomfortable Head Rest in the 2012 Honda Fit",
+          "Cracked Windshield in the 2012 Honda Fit",
+          "Check Engine Light in the 2013 Honda Fit"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/Fit/2009/",
+          "https://www.carcomplaints.com/Honda/Fit/2009/",
+          "https://www.carcomplaints.com/Honda/Fit/2009/",
+          "https://www.carcomplaints.com/Honda/Fit/2010/",
+          "https://www.carcomplaints.com/Honda/Fit/2010/",
+          "https://www.carcomplaints.com/Honda/Fit/2010/",
+          "https://www.carcomplaints.com/Honda/Fit/2012/",
+          "https://www.carcomplaints.com/Honda/Fit/2012/",
+          "https://www.carcomplaints.com/Honda/Fit/2012/",
+          "https://www.carcomplaints.com/Honda/Fit/2013/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/Fit/",
+      "complaintCountsByYear": [
+        {
+          "year": 2009,
+          "complaints": 61
+        },
+        {
+          "year": 2010,
+          "complaints": 52
+        },
+        {
+          "year": 2011,
+          "complaints": 26
+        },
+        {
+          "year": 2012,
+          "complaints": 43
+        },
+        {
+          "year": 2013,
+          "complaints": 26
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2009,
+          "complaints": 61
+        },
+        {
+          "year": 2010,
+          "complaints": 52
+        },
+        {
+          "year": 2012,
+          "complaints": 43
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "car": "Scion xB",
+      "years": "2008-2015",
+      "engine": "2AZ-FE",
+      "transmission": "4AT / 5MT",
+      "type": "Hatchback",
+      "maxMiles": "140k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "lost power steering while driving",
+        "pops out of 5th gear",
+        "paint is coming off in sheets",
+        "cup holders are too small",
+        "transmission failure",
+        "engine spontaneously caught fire",
+        "rough shifting",
+        "radiator failure",
+        "power locks & windows don't work properly"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Scion/xB/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2008 Scion xB",
+          "Lost Power Steering While Driving in the 2008 Scion xB",
+          "Pops Out Of 5th Gear in the 2008 Scion xB",
+          "The Paint Is Coming Off In Sheets in the 2012 Scion xB",
+          "Excessive Oil Consumption in the 2012 Scion xB",
+          "Cup Holders Are Too Small in the 2012 Scion xB",
+          "Excessive Oil Consumption in the 2009 Scion xB",
+          "Transmission Failure in the 2009 Scion xB",
+          "The Engine Spontaneously Caught Fire in the 2009 Scion xB",
+          "Rough Shifting in the 2011 Scion xB"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Scion/xB/2008/",
+          "https://www.carcomplaints.com/Scion/xB/2008/",
+          "https://www.carcomplaints.com/Scion/xB/2008/",
+          "https://www.carcomplaints.com/Scion/xB/2012/",
+          "https://www.carcomplaints.com/Scion/xB/2012/",
+          "https://www.carcomplaints.com/Scion/xB/2012/",
+          "https://www.carcomplaints.com/Scion/xB/2009/",
+          "https://www.carcomplaints.com/Scion/xB/2009/",
+          "https://www.carcomplaints.com/Scion/xB/2009/",
+          "https://www.carcomplaints.com/Scion/xB/2011/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Scion/xB/",
+      "complaintCountsByYear": [
+        {
+          "year": 2008,
+          "complaints": 38
+        },
+        {
+          "year": 2009,
+          "complaints": 20
+        },
+        {
+          "year": 2010,
+          "complaints": 2
+        },
+        {
+          "year": 2011,
+          "complaints": 7
+        },
+        {
+          "year": 2012,
+          "complaints": 23
+        },
+        {
+          "year": 2013,
+          "complaints": 2
+        },
+        {
+          "year": 2014,
+          "complaints": 1
+        },
+        {
+          "year": 2015,
+          "complaints": 1
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2008,
+          "complaints": 38
+        },
+        {
+          "year": 2012,
+          "complaints": 23
+        },
+        {
+          "year": 2009,
+          "complaints": 20
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "car": "Scion tC",
+      "years": "2007-2016",
+      "engine": "2AZ-FE / 2AR-FE",
+      "transmission": "4AT / 5MT (2007-2010), 6AT / 6MT (2011-2016)",
+      "type": "Coupe",
+      "maxMiles": "140k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "power window failure",
+        "shifts roughly",
+        "trunk latch panel snapped off",
+        "water pump seal failure",
+        "noise while clutch is released",
+        "sunroof moving like wild, can't drive with that",
+        "sunroof rattles",
+        "excessive oil cosumption",
+        "water pump failure"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Scion/tC/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2007 Scion tC",
+          "Power Window Failure in the 2007 Scion tC",
+          "Shifts Roughly in the 2007 Scion tC",
+          "Excessive Oil Consumption in the 2008 Scion tC",
+          "Trunk Latch Panel Snapped Off in the 2008 Scion tC",
+          "Water Pump Seal Failure in the 2008 Scion tC",
+          "Noise While Clutch Is Released in the 2011 Scion tC",
+          "Sunroof Moving Like Wild, Can't Drive With That in the 2011 Scion tC",
+          "Sunroof Rattles in the 2011 Scion tC",
+          "Excessive Oil Consumption in the 2010 Scion tC"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Scion/tC/2007/",
+          "https://www.carcomplaints.com/Scion/tC/2007/",
+          "https://www.carcomplaints.com/Scion/tC/2007/",
+          "https://www.carcomplaints.com/Scion/tC/2008/",
+          "https://www.carcomplaints.com/Scion/tC/2008/",
+          "https://www.carcomplaints.com/Scion/tC/2008/",
+          "https://www.carcomplaints.com/Scion/tC/2011/",
+          "https://www.carcomplaints.com/Scion/tC/2011/",
+          "https://www.carcomplaints.com/Scion/tC/2011/",
+          "https://www.carcomplaints.com/Scion/tC/2010/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Scion/tC/",
+      "complaintCountsByYear": [
+        {
+          "year": 2007,
+          "complaints": 57
+        },
+        {
+          "year": 2008,
+          "complaints": 32
+        },
+        {
+          "year": 2009,
+          "complaints": 10
+        },
+        {
+          "year": 2010,
+          "complaints": 10
+        },
+        {
+          "year": 2011,
+          "complaints": 12
+        },
+        {
+          "year": 2012,
+          "complaints": 1
+        },
+        {
+          "year": 2013,
+          "complaints": 7
+        },
+        {
+          "year": 2014,
+          "complaints": 2
+        },
+        {
+          "year": 2015,
+          "complaints": 0
+        },
+        {
+          "year": 2016,
+          "complaints": 6
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 57
+        },
+        {
+          "year": 2008,
+          "complaints": 32
+        },
+        {
+          "year": 2011,
+          "complaints": 12
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "car": "Acura TSX",
+      "years": "2009-2014",
+      "engine": "K24",
+      "transmission": "5AT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "140k",
+      "maxPrice": "$10k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "rear brakes worn prematurely",
+        "device connectivity not working",
+        "power steering failure",
+        "premature brake wear",
+        "transmission failure",
+        "ecu failure",
+        "\"check power steering\" indicator light on",
+        "rack and pinion stopped working",
+        "stalls at random speeds while driving"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Acura/TSX/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2010 Acura TSX",
+          "Rear Brakes Worn Prematurely in the 2010 Acura TSX",
+          "Device Connectivity Not Working in the 2010 Acura TSX",
+          "Excessive Oil Consumption in the 2009 Acura TSX",
+          "Power Steering Failure in the 2009 Acura TSX",
+          "Premature Brake Wear in the 2009 Acura TSX",
+          "Power Steering Failure in the 2012 Acura TSX",
+          "Transmission Failure in the 2012 Acura TSX",
+          "ECU Failure in the 2012 Acura TSX",
+          "\"Check Power Steering\" Indicator Light On in the 2011 Acura TSX"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Acura/TSX/2010/",
+          "https://www.carcomplaints.com/Acura/TSX/2010/",
+          "https://www.carcomplaints.com/Acura/TSX/2010/",
+          "https://www.carcomplaints.com/Acura/TSX/2009/",
+          "https://www.carcomplaints.com/Acura/TSX/2009/",
+          "https://www.carcomplaints.com/Acura/TSX/2009/",
+          "https://www.carcomplaints.com/Acura/TSX/2012/",
+          "https://www.carcomplaints.com/Acura/TSX/2012/",
+          "https://www.carcomplaints.com/Acura/TSX/2012/",
+          "https://www.carcomplaints.com/Acura/TSX/2011/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Acura/TSX/",
+      "complaintCountsByYear": [
+        {
+          "year": 2009,
+          "complaints": 34
+        },
+        {
+          "year": 2010,
+          "complaints": 35
+        },
+        {
+          "year": 2011,
+          "complaints": 11
+        },
+        {
+          "year": 2012,
+          "complaints": 22
+        },
+        {
+          "year": 2013,
+          "complaints": 3
+        },
+        {
+          "year": 2014,
+          "complaints": 2
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2010,
+          "complaints": 35
+        },
+        {
+          "year": 2009,
+          "complaints": 34
+        },
+        {
+          "year": 2012,
+          "complaints": 22
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "car": "Lexus IS 250/350",
+      "years": "2006-2013",
+      "engine": "4GR / 2GR",
+      "transmission": "6AT / 6MT",
+      "type": "Sedan",
+      "maxMiles": "140k",
+      "maxPrice": "$13k",
+      "commonProblems": [
+        "dashboard is melting",
+        "would not start",
+        "transmission failure",
+        "melting dashboard and doors",
+        "gas leaking-fumes into car",
+        "brake dust",
+        "melting dash and trim",
+        "srs airbag light on",
+        "steering locked while driving",
+        "engine failure"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Lexus/IS_250/",
+        "sourceTopHeadlines": [
+          "Dashboard Is Melting in the 2007 Lexus IS 250",
+          "Would Not Start in the 2007 Lexus IS 250",
+          "Transmission Failure in the 2007 Lexus IS 250",
+          "Melting Dashboard And Doors in the 2008 Lexus IS 250",
+          "Gas Leaking-Fumes Into Car in the 2008 Lexus IS 250",
+          "Brake Dust in the 2008 Lexus IS 250",
+          "Melting Dash And Trim in the 2006 Lexus IS 250",
+          "SRS Airbag Light On in the 2006 Lexus IS 250",
+          "Steering Locked While Driving in the 2006 Lexus IS 250",
+          "Engine Failure in the 2012 Lexus IS 250"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Lexus/IS_250/2007/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2007/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2007/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2008/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2008/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2008/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2006/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2006/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2006/",
+          "https://www.carcomplaints.com/Lexus/IS_250/2012/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Lexus/IS_250/",
+      "complaintCountsByYear": [
+        {
+          "year": 2006,
+          "complaints": 9
+        },
+        {
+          "year": 2007,
+          "complaints": 37
+        },
+        {
+          "year": 2008,
+          "complaints": 25
+        },
+        {
+          "year": 2009,
+          "complaints": 5
+        },
+        {
+          "year": 2010,
+          "complaints": 2
+        },
+        {
+          "year": 2011,
+          "complaints": 1
+        },
+        {
+          "year": 2012,
+          "complaints": 7
+        },
+        {
+          "year": 2013,
+          "complaints": 0
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 37
+        },
+        {
+          "year": 2008,
+          "complaints": 25
+        },
+        {
+          "year": 2006,
+          "complaints": 9
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "car": "Lexus GS 350",
+      "years": "2007-2011",
+      "engine": "2GR-FE",
+      "transmission": "6AT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$11k",
+      "commonProblems": [
+        "screeching noise when backing up",
+        "excessive oil consumption",
+        "vvti and rattle noise",
+        "lights working intermittently",
+        "engine started smoking and stopped",
+        "rattling noise from dash",
+        "battery dies",
+        "sunroof exploded",
+        "wheel bolts feel out",
+        "audio not working"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Lexus/GS_350/",
+        "sourceTopHeadlines": [
+          "Screeching Noise When Backing Up in the 2008 Lexus GS 350",
+          "Excessive Oil Consumption in the 2008 Lexus GS 350",
+          "Vvti And Rattle Noise in the 2008 Lexus GS 350",
+          "Lights Working Intermittently in the 2007 Lexus GS 350",
+          "Engine Started Smoking And Stopped in the 2007 Lexus GS 350",
+          "Rattling Noise From Dash in the 2011 Lexus GS 350",
+          "Excessive Oil Consumption in the 2009 Lexus GS 350"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Lexus/GS_350/2008/",
+          "https://www.carcomplaints.com/Lexus/GS_350/2008/",
+          "https://www.carcomplaints.com/Lexus/GS_350/2008/",
+          "https://www.carcomplaints.com/Lexus/GS_350/2007/",
+          "https://www.carcomplaints.com/Lexus/GS_350/2007/",
+          "https://www.carcomplaints.com/Lexus/GS_350/2011/",
+          "https://www.carcomplaints.com/Lexus/GS_350/2009/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Lexus/GS_350/",
+      "complaintCountsByYear": [
+        {
+          "year": 2007,
+          "complaints": 2
+        },
+        {
+          "year": 2008,
+          "complaints": 4
+        },
+        {
+          "year": 2009,
+          "complaints": 1
+        },
+        {
+          "year": 2010,
+          "complaints": 0
+        },
+        {
+          "year": 2011,
+          "complaints": 1
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2008,
+          "complaints": 4
+        },
+        {
+          "year": 2007,
+          "complaints": 2
+        },
+        {
+          "year": 2011,
+          "complaints": 1
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "car": "Infiniti M35",
+      "years": "2006-2010",
+      "engine": "VQ35DE",
+      "transmission": "5AT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "seat track broken",
+        "navigational system design flaw",
+        "door lock actuator stopped working",
+        "air bag sensor faulty",
+        "cracked dashboard",
+        "rack and pinion leaking",
+        "brake failure"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Infiniti/M35/",
+        "sourceTopHeadlines": [
+          "Seat Track Broken in the 2006 Infiniti M35",
+          "Navigational System Design Flaw in the 2006 Infiniti M35",
+          "Door Lock Actuator Stopped Working in the 2006 Infiniti M35",
+          "Air Bag Sensor Faulty in the 2008 Infiniti M35",
+          "Cracked Dashboard in the 2008 Infiniti M35",
+          "Rack And Pinion Leaking in the 2008 Infiniti M35",
+          "Brake Failure in the 2007 Infiniti M35"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Infiniti/M35/2006/",
+          "https://www.carcomplaints.com/Infiniti/M35/2006/",
+          "https://www.carcomplaints.com/Infiniti/M35/2006/",
+          "https://www.carcomplaints.com/Infiniti/M35/2008/",
+          "https://www.carcomplaints.com/Infiniti/M35/2008/",
+          "https://www.carcomplaints.com/Infiniti/M35/2008/",
+          "https://www.carcomplaints.com/Infiniti/M35/2007/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Infiniti/M35/",
+      "complaintCountsByYear": [
+        {
+          "year": 2006,
+          "complaints": 7
+        },
+        {
+          "year": 2007,
+          "complaints": 1
+        },
+        {
+          "year": 2008,
+          "complaints": 4
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2006,
+          "complaints": 7
+        },
+        {
+          "year": 2008,
+          "complaints": 4
+        },
+        {
+          "year": 2007,
+          "complaints": 1
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "car": "Infiniti I35",
+      "years": "2002-2004",
+      "engine": "VQ35DE",
+      "transmission": "4AT",
+      "type": "Sedan",
+      "maxMiles": "160k",
+      "maxPrice": "$5k",
+      "commonProblems": [
+        "oil sludge resulting in engine failure",
+        "control arm failure",
+        "oil leaks",
+        "evap issues causing stall/shut down",
+        "excessive oil consumption"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Infiniti/I35/",
+        "sourceTopHeadlines": [
+          "Oil Sludge Resulting In Engine Failure in the 2002 Infiniti I35",
+          "Control Arm Failure in the 2002 Infiniti I35",
+          "Oil Leaks in the 2002 Infiniti I35",
+          "Evap Issues Causing Stall/Shut Down in the 2004 Infiniti I35",
+          "Excessive Oil Consumption in the 2003 Infiniti I35"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Infiniti/I35/2002/",
+          "https://www.carcomplaints.com/Infiniti/I35/2002/",
+          "https://www.carcomplaints.com/Infiniti/I35/2002/",
+          "https://www.carcomplaints.com/Infiniti/I35/2004/",
+          "https://www.carcomplaints.com/Infiniti/I35/2003/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Infiniti/I35/",
+      "complaintCountsByYear": [
+        {
+          "year": 2002,
+          "complaints": 4
+        },
+        {
+          "year": 2003,
+          "complaints": 1
+        },
+        {
+          "year": 2004,
+          "complaints": 1
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2002,
+          "complaints": 4
+        },
+        {
+          "year": 2004,
+          "complaints": 1
+        },
+        {
+          "year": 2003,
+          "complaints": 1
+        }
+      ]
+    },
+    {
+      "rank": 23,
+      "car": "Acura RL",
+      "years": "2005-2012",
+      "engine": "J35",
+      "transmission": "5AT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$8k",
+      "commonProblems": [
+        "front headlamp flickering and then going out",
+        "stalled compressor",
+        "hf link stuck on",
+        "will not start intermittently",
+        "poor headlight illumination",
+        "wood trim has faded/defective",
+        "dead battery",
+        "excessive oil consumption & engine light on",
+        "a/c catastrophic failure",
+        "multiple cooling compressor failures"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Acura/RL/",
+        "sourceTopHeadlines": [
+          "Front Headlamp Flickering And Then Going Out in the 2005 Acura RL",
+          "Stalled Compressor in the 2005 Acura RL",
+          "Hf Link Stuck On in the 2005 Acura RL",
+          "Will Not Start Intermittently in the 2006 Acura RL",
+          "Poor Headlight Illumination in the 2006 Acura RL",
+          "Wood Trim Has Faded/Defective in the 2011 Acura RL",
+          "Dead Battery in the 2008 Acura RL",
+          "Excessive Oil Consumption & Engine Light On in the 2007 Acura RL"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Acura/RL/2005/",
+          "https://www.carcomplaints.com/Acura/RL/2005/",
+          "https://www.carcomplaints.com/Acura/RL/2005/",
+          "https://www.carcomplaints.com/Acura/RL/2006/",
+          "https://www.carcomplaints.com/Acura/RL/2006/",
+          "https://www.carcomplaints.com/Acura/RL/2011/",
+          "https://www.carcomplaints.com/Acura/RL/2008/",
+          "https://www.carcomplaints.com/Acura/RL/2007/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Acura/RL/",
+      "complaintCountsByYear": [
+        {
+          "year": 2005,
+          "complaints": 8
+        },
+        {
+          "year": 2006,
+          "complaints": 3
+        },
+        {
+          "year": 2007,
+          "complaints": 1
+        },
+        {
+          "year": 2008,
+          "complaints": 1
+        },
+        {
+          "year": 2009,
+          "complaints": 0
+        },
+        {
+          "year": 2010,
+          "complaints": 0
+        },
+        {
+          "year": 2011,
+          "complaints": 1
+        },
+        {
+          "year": 2012,
+          "complaints": 0
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2005,
+          "complaints": 8
+        },
+        {
+          "year": 2006,
+          "complaints": 3
+        },
+        {
+          "year": 2011,
+          "complaints": 1
+        }
+      ]
+    },
+    {
+      "rank": 24,
+      "car": "Toyota Avalon",
+      "years": "2007-2012",
+      "engine": "2GR-FE",
+      "transmission": "6AT",
+      "type": "Sedan",
+      "maxMiles": "150k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "oil baffle failure",
+        "transmission stopped working",
+        "ignition coils defective",
+        "headlights go out randomly",
+        "major oil leak",
+        "rack and pinion leaking",
+        "paint peeling off of car roof",
+        "rack and pinion failure",
+        "paint peeling",
+        "piston pop"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/Avalon/",
+        "sourceTopHeadlines": [
+          "Oil Baffle Failure in the 2007 Toyota Avalon",
+          "Transmission Stopped Working in the 2007 Toyota Avalon",
+          "Ignition Coils Defective in the 2007 Toyota Avalon",
+          "Headlights Go Out Randomly in the 2008 Toyota Avalon",
+          "Major Oil Leak in the 2008 Toyota Avalon",
+          "Rack And Pinion Leaking in the 2008 Toyota Avalon",
+          "Paint Peeling Off Of Car Roof in the 2011 Toyota Avalon",
+          "Rack And Pinion Failure in the 2011 Toyota Avalon",
+          "Paint Peeling in the 2011 Toyota Avalon",
+          "Piston Pop in the 2009 Toyota Avalon"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/Avalon/2007/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2007/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2007/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2008/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2008/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2008/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2011/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2011/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2011/",
+          "https://www.carcomplaints.com/Toyota/Avalon/2009/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/Avalon/",
+      "complaintCountsByYear": [
+        {
+          "year": 2007,
+          "complaints": 84
+        },
+        {
+          "year": 2008,
+          "complaints": 72
+        },
+        {
+          "year": 2009,
+          "complaints": 11
+        },
+        {
+          "year": 2010,
+          "complaints": 2
+        },
+        {
+          "year": 2011,
+          "complaints": 42
+        },
+        {
+          "year": 2012,
+          "complaints": 8
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 84
+        },
+        {
+          "year": 2008,
+          "complaints": 72
+        },
+        {
+          "year": 2011,
+          "complaints": 42
+        }
+      ]
+    },
+    {
+      "rank": 25,
+      "car": "Toyota RAV4",
+      "years": "2006-2012",
+      "engine": "2AZ-FE / 2GR-FE",
+      "transmission": "4AT / 5AT",
+      "type": "SUV",
+      "maxMiles": "150k",
+      "maxPrice": "$10k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "clunking/noise when turning the steering wheel",
+        "engine faliure",
+        "air bags did not deploy after serious accident",
+        "engine blew",
+        "clunking noise when steering",
+        "hum and vibration while driving",
+        "paint bubbling and peeling",
+        "hesitates and lurches at slower speeds",
+        "sudden unintended acceleration"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/RAV4/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2007 Toyota RAV4",
+          "Clunking/Noise When Turning The Steering Wheel in the 2007 Toyota RAV4",
+          "Engine Faliure in the 2007 Toyota RAV4",
+          "Excessive Oil Consumption in the 2008 Toyota RAV4",
+          "Air Bags Did Not Deploy After Serious Accident in the 2008 Toyota RAV4",
+          "Engine Blew in the 2008 Toyota RAV4",
+          "Excessive Oil Consumption in the 2006 Toyota RAV4",
+          "Clunking Noise When Steering in the 2006 Toyota RAV4",
+          "Hum And Vibration While Driving in the 2006 Toyota RAV4",
+          "Paint Bubbling And Peeling in the 2010 Toyota RAV4"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/RAV4/2007/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2007/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2007/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2008/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2008/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2008/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2006/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2006/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2006/",
+          "https://www.carcomplaints.com/Toyota/RAV4/2010/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/RAV4/",
+      "complaintCountsByYear": [
+        {
+          "year": 2006,
+          "complaints": 191
+        },
+        {
+          "year": 2007,
+          "complaints": 355
+        },
+        {
+          "year": 2008,
+          "complaints": 200
+        },
+        {
+          "year": 2009,
+          "complaints": 68
+        },
+        {
+          "year": 2010,
+          "complaints": 76
+        },
+        {
+          "year": 2011,
+          "complaints": 65
+        },
+        {
+          "year": 2012,
+          "complaints": 65
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 355
+        },
+        {
+          "year": 2008,
+          "complaints": 200
+        },
+        {
+          "year": 2006,
+          "complaints": 191
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "car": "Honda CR-V",
+      "years": "2007-2011",
+      "engine": "K24",
+      "transmission": "5AT",
+      "type": "SUV",
+      "maxMiles": "150k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "premature tire wear",
+        "ac compressor failure",
+        "power door locks malfunctioning",
+        "paint chipping",
+        "door locks malfunction",
+        "unwanted acceleration when braking",
+        "excessive oil consumption",
+        "heat not working properly",
+        "battery goes dead",
+        "grinding noise when starting"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/CR-V/",
+        "sourceTopHeadlines": [
+          "Premature Tire Wear in the 2007 Honda CR-V",
+          "Ac Compressor Failure in the 2007 Honda CR-V",
+          "Power Door Locks Malfunctioning in the 2007 Honda CR-V",
+          "Paint Chipping in the 2008 Honda CR-V",
+          "Premature Tire Wear in the 2008 Honda CR-V",
+          "Door Locks Malfunction in the 2008 Honda CR-V",
+          "Unwanted Acceleration When Braking in the 2011 Honda CR-V",
+          "Excessive Oil Consumption in the 2011 Honda CR-V",
+          "Premature Tire Wear in the 2011 Honda CR-V",
+          "Excessive Oil Consumption in the 2010 Honda CR-V"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/CR-V/2007/",
+          "https://www.carcomplaints.com/Honda/CR-V/2007/",
+          "https://www.carcomplaints.com/Honda/CR-V/2007/",
+          "https://www.carcomplaints.com/Honda/CR-V/2008/",
+          "https://www.carcomplaints.com/Honda/CR-V/2008/",
+          "https://www.carcomplaints.com/Honda/CR-V/2008/",
+          "https://www.carcomplaints.com/Honda/CR-V/2011/",
+          "https://www.carcomplaints.com/Honda/CR-V/2011/",
+          "https://www.carcomplaints.com/Honda/CR-V/2011/",
+          "https://www.carcomplaints.com/Honda/CR-V/2010/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/CR-V/",
+      "complaintCountsByYear": [
+        {
+          "year": 2007,
+          "complaints": 283
+        },
+        {
+          "year": 2008,
+          "complaints": 185
+        },
+        {
+          "year": 2009,
+          "complaints": 83
+        },
+        {
+          "year": 2010,
+          "complaints": 119
+        },
+        {
+          "year": 2011,
+          "complaints": 148
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 283
+        },
+        {
+          "year": 2008,
+          "complaints": 185
+        },
+        {
+          "year": 2011,
+          "complaints": 148
+        }
+      ]
+    },
+    {
+      "rank": 27,
+      "car": "Honda Pilot",
+      "years": "2009-2015",
+      "engine": "J35",
+      "transmission": "5AT / 6AT",
+      "type": "SUV",
+      "maxMiles": "140k",
+      "maxPrice": "$11k",
+      "commonProblems": [
+        "paint chipping",
+        "paint peeling",
+        "hesitates while driving",
+        "excessive oil consumption",
+        "engine failure",
+        "warped rotors",
+        "premature tire wear",
+        "engine light on/misfire",
+        "pulsating brakes",
+        "transmission failure"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Honda/Pilot/",
+        "sourceTopHeadlines": [
+          "Paint Chipping in the 2013 Honda Pilot",
+          "Paint Peeling in the 2013 Honda Pilot",
+          "Hesitates While Driving in the 2013 Honda Pilot",
+          "Excessive Oil Consumption in the 2009 Honda Pilot",
+          "Engine Failure in the 2009 Honda Pilot",
+          "Warped Rotors in the 2009 Honda Pilot",
+          "Premature Tire Wear in the 2011 Honda Pilot",
+          "Engine Light On/Misfire in the 2011 Honda Pilot",
+          "Pulsating Brakes in the 2011 Honda Pilot",
+          "Excessive Oil Consumption in the 2010 Honda Pilot"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Honda/Pilot/2013/",
+          "https://www.carcomplaints.com/Honda/Pilot/2013/",
+          "https://www.carcomplaints.com/Honda/Pilot/2013/",
+          "https://www.carcomplaints.com/Honda/Pilot/2009/",
+          "https://www.carcomplaints.com/Honda/Pilot/2009/",
+          "https://www.carcomplaints.com/Honda/Pilot/2009/",
+          "https://www.carcomplaints.com/Honda/Pilot/2011/",
+          "https://www.carcomplaints.com/Honda/Pilot/2011/",
+          "https://www.carcomplaints.com/Honda/Pilot/2011/",
+          "https://www.carcomplaints.com/Honda/Pilot/2010/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Honda/Pilot/",
+      "complaintCountsByYear": [
+        {
+          "year": 2009,
+          "complaints": 113
+        },
+        {
+          "year": 2010,
+          "complaints": 92
+        },
+        {
+          "year": 2011,
+          "complaints": 100
+        },
+        {
+          "year": 2012,
+          "complaints": 68
+        },
+        {
+          "year": 2013,
+          "complaints": 124
+        },
+        {
+          "year": 2014,
+          "complaints": 69
+        },
+        {
+          "year": 2015,
+          "complaints": 53
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2013,
+          "complaints": 124
+        },
+        {
+          "year": 2009,
+          "complaints": 113
+        },
+        {
+          "year": 2011,
+          "complaints": 100
+        }
+      ]
+    },
+    {
+      "rank": 28,
+      "car": "Lexus RX 350",
+      "years": "2007-2012",
+      "engine": "2GR-FE",
+      "transmission": "5AT / 6AT",
+      "type": "SUV",
+      "maxMiles": "150k",
+      "maxPrice": "$12k",
+      "commonProblems": [
+        "rack and pinion leaking",
+        "water pump leak",
+        "massive oil leak",
+        "shift lag, asl",
+        "power steering rack leak",
+        "dashboard cracking",
+        "a/c / heater not working properly",
+        "doors rattling",
+        "paint discoloration: the dealer said \"bug guts\" caused it",
+        "engine failure"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Lexus/RX_350/",
+        "sourceTopHeadlines": [
+          "Rack And Pinion Leaking in the 2007 Lexus RX 350",
+          "Water Pump Leak in the 2007 Lexus RX 350",
+          "Massive Oil Leak in the 2007 Lexus RX 350",
+          "Shift Lag, ASL in the 2008 Lexus RX 350",
+          "Power Steering Rack Leak in the 2008 Lexus RX 350",
+          "Dashboard Cracking in the 2008 Lexus RX 350",
+          "A/C / Heater Not Working Properly in the 2010 Lexus RX 350",
+          "Doors Rattling in the 2010 Lexus RX 350",
+          "Paint Discoloration: The Dealer Said \"Bug Guts\" Caused It in the 2010 Lexus RX 350",
+          "Engine Failure in the 2009 Lexus RX 350"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Lexus/RX_350/2007/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2007/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2007/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2008/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2008/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2008/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2010/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2010/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2010/",
+          "https://www.carcomplaints.com/Lexus/RX_350/2009/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Lexus/RX_350/",
+      "complaintCountsByYear": [
+        {
+          "year": 2007,
+          "complaints": 40
+        },
+        {
+          "year": 2008,
+          "complaints": 23
+        },
+        {
+          "year": 2009,
+          "complaints": 9
+        },
+        {
+          "year": 2010,
+          "complaints": 10
+        },
+        {
+          "year": 2011,
+          "complaints": 4
+        },
+        {
+          "year": 2012,
+          "complaints": 3
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2007,
+          "complaints": 40
+        },
+        {
+          "year": 2008,
+          "complaints": 23
+        },
+        {
+          "year": 2010,
+          "complaints": 10
+        }
+      ]
+    },
+    {
+      "rank": 29,
+      "car": "Toyota Highlander",
+      "years": "2008-2013",
+      "engine": "2GR-FE",
+      "transmission": "5AT",
+      "type": "SUV",
+      "maxMiles": "150k",
+      "maxPrice": "$11k",
+      "commonProblems": [
+        "engine turns over, will not start",
+        "engine knock/rattle noise on cold startup",
+        "cd player not working properly",
+        "lift gate not working properly",
+        "door closes/chime stays on",
+        "door locks not functioning",
+        "car makes clunking noise when turning",
+        "all wheel drive not engaging",
+        "excessive oil consumption",
+        "odor from ac"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Toyota/Highlander/",
+        "sourceTopHeadlines": [
+          "Engine Turns Over, Will Not Start in the 2008 Toyota Highlander",
+          "Engine Knock/Rattle Noise On Cold Startup in the 2008 Toyota Highlander",
+          "Cd Player Not Working Properly in the 2008 Toyota Highlander",
+          "Lift Gate Not Working Properly in the 2010 Toyota Highlander",
+          "Door Closes/Chime Stays On in the 2010 Toyota Highlander",
+          "Door Locks Not Functioning in the 2010 Toyota Highlander",
+          "Car Makes Clunking Noise When Turning in the 2012 Toyota Highlander",
+          "All Wheel Drive Not Engaging in the 2012 Toyota Highlander",
+          "Excessive Oil Consumption in the 2012 Toyota Highlander",
+          "Odor From AC in the 2013 Toyota Highlander"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Toyota/Highlander/2008/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2008/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2008/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2010/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2010/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2010/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2012/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2012/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2012/",
+          "https://www.carcomplaints.com/Toyota/Highlander/2013/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Toyota/Highlander/",
+      "complaintCountsByYear": [
+        {
+          "year": 2008,
+          "complaints": 83
+        },
+        {
+          "year": 2009,
+          "complaints": 21
+        },
+        {
+          "year": 2010,
+          "complaints": 55
+        },
+        {
+          "year": 2011,
+          "complaints": 41
+        },
+        {
+          "year": 2012,
+          "complaints": 50
+        },
+        {
+          "year": 2013,
+          "complaints": 41
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2008,
+          "complaints": 83
+        },
+        {
+          "year": 2010,
+          "complaints": 55
+        },
+        {
+          "year": 2012,
+          "complaints": 50
+        }
+      ]
+    },
+    {
+      "rank": 30,
+      "car": "Subaru Outback",
+      "years": "2010-2014",
+      "engine": "2.5L EJ253 / FB25B / 3.6L EZ36",
+      "transmission": "5AT / CVT / 6MT",
+      "type": "Wagon",
+      "maxMiles": "140k",
+      "maxPrice": "$9k",
+      "commonProblems": [
+        "excessive oil consumption",
+        "hesitates when accelerating",
+        "shudders between gears",
+        "transmission failure",
+        "stalling while braking, stopping",
+        "shuddering",
+        "engine failure",
+        "hesitating, stalling",
+        "windshield easily cracks",
+        "cracks easily"
+      ],
+      "verification": {
+        "source": "CarComplaints.com model overview",
+        "sourceUrl": "https://www.carcomplaints.com/Subaru/Outback/",
+        "sourceTopHeadlines": [
+          "Excessive Oil Consumption in the 2014 Subaru Outback",
+          "Hesitates When Accelerating in the 2014 Subaru Outback",
+          "Shudders Between Gears in the 2014 Subaru Outback",
+          "Transmission Failure in the 2011 Subaru Outback",
+          "Stalling While Braking, Stopping in the 2011 Subaru Outback",
+          "Shuddering in the 2011 Subaru Outback",
+          "Excessive Oil Consumption in the 2013 Subaru Outback",
+          "Transmission Failure in the 2013 Subaru Outback",
+          "Engine Failure in the 2013 Subaru Outback",
+          "Hesitating, Stalling in the 2010 Subaru Outback"
+        ],
+        "sourceYearPages": [
+          "https://www.carcomplaints.com/Subaru/Outback/2014/",
+          "https://www.carcomplaints.com/Subaru/Outback/2014/",
+          "https://www.carcomplaints.com/Subaru/Outback/2014/",
+          "https://www.carcomplaints.com/Subaru/Outback/2011/",
+          "https://www.carcomplaints.com/Subaru/Outback/2011/",
+          "https://www.carcomplaints.com/Subaru/Outback/2011/",
+          "https://www.carcomplaints.com/Subaru/Outback/2013/",
+          "https://www.carcomplaints.com/Subaru/Outback/2013/",
+          "https://www.carcomplaints.com/Subaru/Outback/2013/",
+          "https://www.carcomplaints.com/Subaru/Outback/2010/"
+        ]
+      },
+      "carComplaintsPage": "https://www.carcomplaints.com/Subaru/Outback/",
+      "complaintCountsByYear": [
+        {
+          "year": 2010,
+          "complaints": 60
+        },
+        {
+          "year": 2011,
+          "complaints": 104
+        },
+        {
+          "year": 2012,
+          "complaints": 56
+        },
+        {
+          "year": 2013,
+          "complaints": 79
+        },
+        {
+          "year": 2014,
+          "complaints": 108
+        }
+      ],
+      "worstYears": [
+        {
+          "year": 2014,
+          "complaints": 108
+        },
+        {
+          "year": 2011,
+          "complaints": 104
+        },
+        {
+          "year": 2013,
+          "complaints": 79
+        }
+      ]
+    }
+  ]
+}

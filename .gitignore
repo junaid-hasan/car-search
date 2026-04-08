@@ -1,0 +1,19 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Tooling caches
+.ruff_cache/
+
+# Local artifacts / generated exports
+*.csv
+data/cars_by_year.csv
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
