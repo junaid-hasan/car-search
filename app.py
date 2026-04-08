@@ -542,7 +542,6 @@ def main() -> None:
     cars = load_cars()
     car_types = sorted({car.get("type", "Unknown") for car in cars})
 
-    st.markdown("#### Required Filters")
     req_col1, req_col2 = st.columns([3, 3])
     with req_col1:
         st.markdown("### Zipcode (required)")
@@ -564,7 +563,7 @@ def main() -> None:
             label_visibility="collapsed",
         )
 
-    with st.expander("Advanced Filters"):
+    with st.expander("Advanced"):
         adv_col1, adv_col2, adv_col3 = st.columns([2, 2, 2])
         with adv_col1:
             min_price = st.number_input(
@@ -596,10 +595,7 @@ def main() -> None:
             aggressive_mode = st.checkbox(
                 "Aggressive",
                 value=False,
-                help=(
-                    "When off, each car is capped at its JSON maxPrice +10%. "
-                    "When on, only your Budget is used."
-                ),
+                help="Shows cars beyond ideal prices.",
             )
         with adv_col6:
             show_complaints = st.checkbox("Browse complaints", value=False)
