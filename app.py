@@ -18,6 +18,8 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 )
 
+V6_HINT_RE = re.compile(r"\b(v6|6\s*cyl|6-cylinder|3\.5l?)\b", re.I)
+
 
 @st.cache_data
 def load_cars() -> list[dict[str, Any]]:
@@ -44,6 +46,24 @@ def parse_max_miles(spec: str) -> int | None:
     if match.group(2) == "k":
         value *= 1000
     return value
+
+
+def parse_price_value(spec: str) -> int | None:
+    text = spec.strip().lower().replace(",", "")
+    text = text.replace("$", "")
+
+    if not text:
+        return None
+
+    k_match = re.search(r"(\d+(?:\.\d+)?)\s*k\b", text)
+    if k_match:
+        return int(float(k_match.group(1)) * 1000)
+
+    num_match = re.search(r"\d+", text)
+    if num_match:
+        return int(num_match.group(0))
+
+    return None
 
 
 def query_for_car(car_name: str) -> str:
@@ -163,6 +183,120 @@ def extract_listings(page_html: str) -> list[dict[str, str]]:
     return results
 
 
+def filter_listings_by_price(
+    listings: list[dict[str, str]],
+    max_price: int,
+) -> list[dict[str, str]]:
+    filtered: list[dict[str, str]] = []
+    for listing in listings:
+        listing_price = parse_price_value(listing.get("price", ""))
+        if listing_price is None or listing_price <= max_price:
+            filtered.append(listing)
+    return filtered
+
+
+def car_requires_v6_filter(car: dict[str, Any]) -> bool:
+    return "(v6)" in car.get("car", "").lower()
+
+
+def engine_prefixes_from_spec(engine_spec: str) -> list[str]:
+    prefixes: list[str] = []
+    for token in re.split(r"[^A-Za-z0-9]+", engine_spec.upper()):
+        if not token:
+            continue
+        if not (re.search(r"[A-Z]", token) and re.search(r"\d", token)):
+            continue
+        prefix_match = re.match(r"([A-Z]?\d{1,3}[A-Z]{1,3})", token)
+        if prefix_match:
+            prefix = prefix_match.group(1)
+            if prefix not in prefixes:
+                prefixes.append(prefix)
+    return prefixes
+
+
+def extract_cylinder_count(listing_html: str) -> int | None:
+    vin_pattern = re.search(r'"Engine Number of Cylinders","(\d+)"', listing_html)
+    if vin_pattern:
+        return int(vin_pattern.group(1))
+
+    attr_pattern = re.search(
+        r'<span class="attr">\s*<b>([^<]+)</b>\s*cylinders\s*</span>',
+        listing_html,
+        re.I,
+    )
+    if attr_pattern:
+        digits = re.search(r"\d+", attr_pattern.group(1))
+        if digits:
+            return int(digits.group(0))
+
+    return None
+
+
+def extract_engine_model(listing_html: str) -> str | None:
+    vin_pattern = re.search(r'"Engine Model","([^"]+)"', listing_html)
+    if vin_pattern:
+        return vin_pattern.group(1).upper()
+    return None
+
+
+def fetch_listing_specs(url: str) -> tuple[int | None, str | None]:
+    try:
+        response = requests.get(
+            url,
+            timeout=12,
+            headers={"User-Agent": USER_AGENT},
+            allow_redirects=True,
+        )
+        response.raise_for_status()
+        cylinders = extract_cylinder_count(response.text)
+        engine_model = extract_engine_model(response.text)
+        return cylinders, engine_model
+    except Exception:  # noqa: BLE001
+        return None, None
+
+
+def filter_v6_listings(
+    listings: list[dict[str, str]],
+    engine_prefixes: list[str],
+) -> list[dict[str, str]]:
+    keep_map: dict[int, bool] = {}
+    candidates_for_lookup: list[tuple[int, dict[str, str]]] = []
+
+    for idx, listing in enumerate(listings):
+        title = listing.get("title", "")
+        if V6_HINT_RE.search(title):
+            keep_map[idx] = True
+            continue
+        candidates_for_lookup.append((idx, listing))
+
+    if not candidates_for_lookup:
+        return [
+            listing for idx, listing in enumerate(listings) if keep_map.get(idx, False)
+        ]
+
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        future_to_listing = {
+            executor.submit(fetch_listing_specs, listing["url"]): (idx, listing)
+            for idx, listing in candidates_for_lookup
+        }
+        for future in as_completed(future_to_listing):
+            idx, _ = future_to_listing[future]
+            cylinders, engine_model = future.result()
+
+            if cylinders is not None:
+                keep_map[idx] = cylinders == 6
+                continue
+
+            if engine_model and engine_prefixes:
+                # Least aggressive behavior: do not exclude on engine-model mismatch.
+                keep_map[idx] = True
+                continue
+
+            keep_map[idx] = True
+
+    return [listing for idx, listing in enumerate(listings) if keep_map.get(idx, False)]
+
+
 def search_car(
     index: int,
     car: dict[str, Any],
@@ -171,12 +305,38 @@ def search_car(
     budget: int,
     distance_miles: int,
     clean_title_only: bool,
+    aggressive_mode: bool,
 ) -> dict[str, Any]:
+    effective_max_price = budget
+    model_max_price = parse_price_value(car.get("maxPrice", ""))
+    if not aggressive_mode and model_max_price is not None:
+        effective_max_price = min(budget, int(model_max_price * 1.1))
+
+    if effective_max_price < min_price:
+        autotempest_url = build_autotempest_url(
+            car,
+            postal,
+            min_price,
+            min_price,
+            distance_miles,
+        )
+        return {
+            "index": index,
+            "car": car["car"],
+            "years": car.get("years", ""),
+            "carComplaintsPage": car.get("carComplaintsPage", ""),
+            "autotempestUrl": autotempest_url,
+            "listings": [],
+            "totalListings": 0,
+            "error": "",
+            "searchUrl": "",
+        }
+
     url = build_search_url(
         car,
         postal,
         min_price,
-        budget,
+        effective_max_price,
         distance_miles,
         clean_title_only,
     )
@@ -184,7 +344,7 @@ def search_car(
         car,
         postal,
         min_price,
-        budget,
+        effective_max_price,
         distance_miles,
     )
     try:
@@ -195,7 +355,14 @@ def search_car(
             allow_redirects=True,
         )
         response.raise_for_status()
-        listings = extract_listings(response.text)[:MAX_LINKS_PER_CAR]
+        listings = extract_listings(response.text)
+        if not aggressive_mode:
+            listings = filter_listings_by_price(listings, effective_max_price)
+        if car_requires_v6_filter(car):
+            engine_prefixes = engine_prefixes_from_spec(car.get("engine", ""))
+            listings = filter_v6_listings(listings, engine_prefixes)
+        total_listings = len(listings)
+        listings = listings[:MAX_LINKS_PER_CAR]
         final_search_url = response.url
     except Exception as exc:  # noqa: BLE001
         return {
@@ -205,6 +372,7 @@ def search_car(
             "carComplaintsPage": car.get("carComplaintsPage", ""),
             "autotempestUrl": autotempest_url,
             "listings": [],
+            "totalListings": 0,
             "error": str(exc),
             "searchUrl": url,
         }
@@ -216,6 +384,7 @@ def search_car(
         "carComplaintsPage": car.get("carComplaintsPage", ""),
         "autotempestUrl": autotempest_url,
         "listings": listings,
+        "totalListings": total_listings,
         "error": "",
         "searchUrl": final_search_url,
     }
@@ -228,6 +397,7 @@ def run_search(
     budget: int,
     distance_miles: int,
     clean_title_only: bool,
+    aggressive_mode: bool,
 ) -> list[dict[str, Any]]:
     jobs: list[Any] = []
     with ThreadPoolExecutor(max_workers=8) as executor:
@@ -242,6 +412,7 @@ def run_search(
                     budget,
                     distance_miles,
                     clean_title_only,
+                    aggressive_mode,
                 )
             )
 
@@ -400,12 +571,21 @@ def main() -> None:
                     index=0,
                 )
 
-            adv_col4, adv_col5, adv_col6 = st.columns([2, 2, 2])
+            adv_col4, adv_col5, adv_col6, adv_col7 = st.columns([2, 2, 2, 2])
             with adv_col4:
                 clean_title_only = st.checkbox("Clean title", value=True)
             with adv_col5:
-                show_complaints = st.checkbox("Browse complaints", value=False)
+                aggressive_mode = st.checkbox(
+                    "Aggressive",
+                    value=False,
+                    help=(
+                        "When off, each car is capped at its JSON maxPrice +10%. "
+                        "When on, only your Budget is used."
+                    ),
+                )
             with adv_col6:
+                show_complaints = st.checkbox("Browse complaints", value=False)
+            with adv_col7:
                 show_autotempest = st.checkbox("Browse autotempest", value=False)
 
         submitted = st.form_submit_button("Search Listings", use_container_width=True)
@@ -432,20 +612,24 @@ def main() -> None:
                 int(budget),
                 int(distance_miles),
                 clean_title_only,
+                aggressive_mode,
             )
 
         st.session_state["search_results"] = [row for row in results if row["listings"]]
         st.session_state["search_errors"] = [row for row in results if row["error"]]
         st.session_state["search_count"] = len(selected_cars)
+        st.session_state["total_listings"] = sum(
+            row.get("totalListings", 0) for row in results
+        )
 
     rows = st.session_state.get("search_results", [])
     errors = st.session_state.get("search_errors", [])
     searched_count = st.session_state.get("search_count")
+    total_listings = st.session_state.get("total_listings", 0)
 
     if searched_count is not None:
         st.subheader("Results")
-        st.write(f"Cars searched: {searched_count}")
-        st.write(f"Cars with listings: {len(rows)}")
+        st.write(f"Total listings found: {total_listings}")
 
         if not rows:
             st.info("No matching listings found for the current inputs.")

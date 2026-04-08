@@ -12,6 +12,7 @@ venv/
 # Local artifacts / generated exports
 *.csv
 data/cars_by_year.csv
+notes.md
 
 # OS/editor
 .DS_Store
