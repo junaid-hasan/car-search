@@ -23,13 +23,37 @@ A Craigslist-focused used-car finder powered by a curated list of cars.
 
 ## Live Links
 
-- 🐙 GitHub Repo: [junaid-hasan/car-search](https://github.com/junaid-hasan/car-search)
-- 🤗 Hugging Face Space: [junaid-hasan/car-search](https://huggingface.co/spaces/junaid-hasan/car-search)
+- Code: [junaid-hasan/car-search](https://github.com/junaid-hasan/car-search)
+- Website: [junaid-hasan/car-search](https://huggingface.co/spaces/junaid-hasan/car-search)
 
 ## Data
 
 - Primary dataset: `data/cars.json`
 - The current list is curated manually and will evolve toward a hybrid (automated + reviewed) pipeline.
+
+## Deploy With Your Own Car List
+
+Yes, the core workflow is simple: update `data/cars.json` with your own curated list, then deploy.
+
+Minimum useful fields per car entry:
+
+- `car`
+- `years` (for query year range)
+- `maxMiles` (for mileage cap)
+- `maxPrice` (used by non-aggressive filtering)
+- `type` (for UI filter)
+- `carComplaintsPage` (optional UI link, recommended)
+- `engine` (recommended for better V6 filtering)
+
+Then deploy by pushing your branch:
+
+```bash
+# Hugging Face Space
+git push hf main
+
+# GitHub repo
+git push origin main
+```
 
 ## Run Locally
 
