@@ -1,14 +1,14 @@
 ---
-title: Streamlit Template Space
+title: Car Search
 emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
 app_port: 8501
 tags:
-  - streamlit
+- streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: Unbeatable Cars
 ---
 
 # Welcome to Streamlit!
