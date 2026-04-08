@@ -19,6 +19,7 @@ USER_AGENT = (
 )
 
 V6_HINT_RE = re.compile(r"\b(v6|6\s*cyl|6-cylinder|3\.5l?)\b", re.I)
+US_ZIP_RE = re.compile(r"^\d{5}(?:-\d{4})?$")
 
 
 @st.cache_data
@@ -64,6 +65,16 @@ def parse_price_value(spec: str) -> int | None:
         return int(num_match.group(0))
 
     return None
+
+
+def normalize_postal(postal: str) -> str:
+    cleaned = re.sub(r"\s+", "", postal.strip().upper())
+    return cleaned
+
+
+def is_supported_us_zip(postal: str) -> bool:
+    normalized = normalize_postal(postal)
+    return bool(US_ZIP_RE.fullmatch(normalized))
 
 
 def query_for_car(car_name: str) -> str:
@@ -524,6 +535,7 @@ def main() -> None:
 
     st.title("Unbeatable Cars")
     st.caption("Find cars that dont complain")
+    st.caption("Currently supports US ZIP codes only.")
 
     cars = load_cars()
     car_types = sorted({car.get("type", "Unknown") for car in cars})
@@ -532,12 +544,14 @@ def main() -> None:
         st.markdown("#### Required Filters")
         req_col1, req_col2 = st.columns([3, 3])
         with req_col1:
-            st.markdown("### Postal (required)")
+            st.markdown("### Zipcode (required)")
             postal = st.text_input(
-                "Postal (required)",
+                "Zipcode (required)",
                 value="10274",
+                max_chars=10,
                 label_visibility="collapsed",
             )
+
         with req_col2:
             st.markdown("### Budget (USD)")
             budget = st.number_input(
@@ -545,6 +559,7 @@ def main() -> None:
                 min_value=500,
                 value=10000,
                 step=500,
+                max_value=200000,
                 label_visibility="collapsed",
             )
 
@@ -556,6 +571,7 @@ def main() -> None:
                     min_value=0,
                     value=1000,
                     step=100,
+                    max_value=200000,
                 )
             with adv_col2:
                 distance_miles = st.number_input(
@@ -563,6 +579,7 @@ def main() -> None:
                     min_value=1,
                     value=25,
                     step=5,
+                    max_value=500,
                 )
             with adv_col3:
                 selected_type = st.selectbox(
@@ -596,6 +613,12 @@ def main() -> None:
             st.error("Please enter a postal code.")
             return
 
+        if not is_supported_us_zip(trimmed_postal):
+            st.error("This search currently supports US ZIP codes only.")
+            return
+
+        normalized_postal = normalize_postal(trimmed_postal)
+
         if int(min_price) > int(budget):
             st.error("Min Price must be less than or equal to Budget.")
             return
@@ -607,7 +630,7 @@ def main() -> None:
         with st.spinner(f"Searching Craigslist for {len(selected_cars)} cars..."):
             results = run_search(
                 selected_cars,
-                trimmed_postal,
+                normalized_postal,
                 int(min_price),
                 int(budget),
                 int(distance_miles),
@@ -615,12 +638,12 @@ def main() -> None:
                 aggressive_mode,
             )
 
+        total_listings = sum(row.get("totalListings", 0) for row in results)
+
         st.session_state["search_results"] = [row for row in results if row["listings"]]
         st.session_state["search_errors"] = [row for row in results if row["error"]]
         st.session_state["search_count"] = len(selected_cars)
-        st.session_state["total_listings"] = sum(
-            row.get("totalListings", 0) for row in results
-        )
+        st.session_state["total_listings"] = total_listings
 
     rows = st.session_state.get("search_results", [])
     errors = st.session_state.get("search_errors", [])
